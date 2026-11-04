@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081321">
+  <meta name="description" content="عالم السيارات الكورية: قصص وحقائق هيونداي وكيا، خط زمني، واختبر معلوماتك.">
+  <title>عالم السيارات الكورية | AutoKor</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{background:#071321;color:#dce4ed}
+    .page-hero,.page-hero .hero-content{min-height:0}.page-hero .hero-content{padding-top:34px;padding-bottom:30px}
+    .page-hero h1{font-size:clamp(36px,5vw,58px)}
+    @media(min-width:651px){.page-hero .hero-art{height:300px}}
+    .sec{position:relative;padding:72px 0;overflow:hidden}
+    .sec:before{content:"";position:absolute;inset:0;opacity:.12;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:44px 44px}
+    .sec>.container{position:relative;z-index:1}
+    .s1{background:radial-gradient(ellipse at 15% 0,#14304a 0,#0b1a2b 42%,#071321 85%)}
+    .s2{background:linear-gradient(180deg,#0b192b,#0e2238)}
+    .s2:before{opacity:1;background-image:url("data:image/svg+xml,%3Csvg width='28' height='49' viewBox='0 0 28 49' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='.05' fill-rule='evenodd'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/svg%3E");background-size:56px 98px}
+    .s3{background:radial-gradient(ellipse at 85% 100%,#17334f 0,#0b1a2b 45%,#071321 88%)}
+    .sec .section-head h2{color:#fff}.sec .section-head h2 em{color:var(--lime)}.sec .section-head p{color:#9baabd}.sec .section-kicker{color:var(--lime)}.sec .section-index{color:#5f7189}
+    .tab{background:#0f2036;border-color:#1f3a5a;color:#9baabd}.tab.active,.tab:hover{background:var(--lime);color:#101a24;border-color:var(--lime)}
+    .tabs-row{margin-bottom:20px}
+    .panel{display:none;grid-template-columns:1fr 1fr;gap:16px}.panel.show{display:grid}
+    .card{background:linear-gradient(160deg,#10243b,#0c1c30);border:1px solid rgba(255,255,255,.09);border-radius:12px;padding:20px;transition:.2s}
+    .card:hover{border-color:#ccff0055;transform:translateY(-3px)}
+    .card h3{font-size:19px;color:#fff;margin:4px 0 6px}.card .tag{font-size:11px;color:var(--lime);font-weight:800;letter-spacing:.5px}
+    .card ul{list-style:none;display:grid;gap:10px;margin-top:10px}.card li{font-size:14px;color:#aebaca;padding-right:18px;position:relative;line-height:1.8}
+    .card li:before{content:"";position:absolute;right:0;top:11px;width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 8px #ccff0088}
+    .timeline{border-right:2px solid #ccff0040;padding-right:24px;max-width:780px}
+    .tl{position:relative;padding:0 0 22px}.tl:before{content:"";position:absolute;right:-31px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--lime);border:2px solid #0b192b;box-shadow:0 0 12px #ccff00aa}
+    .tl b{color:var(--lime);font-size:14px}.tl h4{font-size:16px;color:#fff;margin:2px 0}.tl p{font-size:13px;color:#9baabd;line-height:1.8}
+    .models{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .models .card p{font-size:13px;color:#9baabd;line-height:1.8;margin:6px 0 12px}.models .go{font-size:12px;font-weight:800;color:var(--lime)}.models .go:hover{text-decoration:underline}
+    .quiz{background:linear-gradient(160deg,#10243b,#0c1c30);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:24px;max-width:720px}
+    .quiz .qn{font-size:12px;color:#7d8ea3}.quiz h3{font-size:20px;color:#fff;margin:6px 0 14px}
+    .opts{display:grid;gap:9px}.opts button{text-align:right;border:1px solid #1f3a5a;background:#12273f;border-radius:9px;padding:12px 14px;font-size:15px;cursor:pointer;color:#e5ecf4}
+    .opts button:hover:not(:disabled){border-color:var(--lime)}.opts button.ok{background:#ccff0024;border-color:var(--lime)}.opts button.no{background:#ff5a5a1f;border-color:#d86a6a}
+    .fb{min-height:24px;margin-top:12px;font-size:14px;color:#aebaca}.next{margin-top:10px}
+    .tips{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .note{margin-top:22px;font-size:12px;color:#7d8ea3}
+    .cta{background:linear-gradient(120deg,#0b192b,#122b43);color:#fff;text-align:center;padding:56px 0;border-top:1px solid #ccff0040}.cta h2{font-size:30px;font-weight:900;margin-bottom:8px}.cta p{color:#afbdcc;margin-bottom:20px}
+    @media(max-width:900px){.models{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:650px){.sec{padding:48px 0}.panel,.tips,.models{grid-template-columns:1fr}.quiz{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AutoKor الصفحة الرئيسية"><img src="assets/autokor-logo.jpg" alt="شعار AutoKor"></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#home">الرئيسية</a>
+        <a href="index.html#brands">السيارات</a>
+        <a href="index.html#catalog">قطع الغيار</a>
+        <a class="active" href="korean-cars.html">عالم السيارات</a>
+        <a href="index.html#request">اطلب قطعة</a>
+      </nav>
+      <a class="header-cta" href="index.html#request"><span>＋</span> اطلب قطعتك</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero page-hero">
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> هيونداي × كيا</div>
+          <h1>عالم السيارات<br><span>الكورية.</span></h1>
+          <p>قصص وحقائق عن هيونداي وكيا، وخط زمني لأهم المحطات، واختبار سريع لمعلوماتك.</p>
+        </div>
+        <div class="hero-art">
+          <div class="art-glow"></div>
+          <img src="assets/autokor-logo.jpg" alt="شعار AutoKor" class="hero-logo">
+          <div class="floating-chip"><span class="chip-dot"></span> كيا <b>×</b> هيونداي</div>
+          <div class="art-caption">KOREAN CARS <span>•</span> ALEPPO</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="sec s1" id="brands">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">الشركتان</span><h2>من <em>هم</em>؟</h2><p>اختر لتتعرف على الحكاية.</p></div><span class="section-index">01 / BRANDS</span></div>
+        <div class="catalog-tabs tabs-row" id="brandTabs">
+          <button class="tab active" data-p="hyundai">هيونداي</button>
+          <button class="tab" data-p="kia">كيا</button>
+          <button class="tab" data-p="both">معاً</button>
+        </div>
+        <div class="panel show" id="p-hyundai">
+          <div class="card"><span class="tag">HYUNDAI</span><h3>البداية</h3><ul>
+            <li>تأسست شركة هيونداي موتور عام 1967 على يد تشونغ جو-يونغ.</li>
+            <li>كلمة «هيونداي» الكورية تعني «الحداثة» أو «العصر الحديث».</li>
+            <li>أول موديل جمّعته عام 1968 كان Cortina بالتعاون مع فورد.</li></ul></div>
+          <div class="card"><span class="tag">HYUNDAI</span><h3>الانطلاقة والتوسع</h3><ul>
+            <li>أطلقت Pony في ديسمبر 1975، وهو أول موديل مستقل تنتجه بكميات كبيرة، وصمّم شكله الإيطالي جيورجيتو جيوجيارو.</li>
+            <li>شحنت أولى سياراتها للتصدير (5 سيارات Pony) إلى الإكوادور في يوليو 1976.</li>
+            <li>مصنعها في أولسان يوصف بأنه أكبر مصنع سيارات في موقع واحد بالعالم.</li>
+            <li>أطلقت علامة Genesis الفاخرة عام 2015، وقدّمت Ioniq 5 الكهربائية عام 2021.</li></ul></div>
+        </div>
+        <div class="panel" id="p-kia">
+          <div class="card"><span class="tag">KIA</span><h3>البداية</h3><ul>
+            <li>تأسست عام 1944 باسم Kyungsung Precision Industry لتصنيع أنابيب الصلب وقطع الدراجات.</li>
+            <li>أنتجت عام 1951 أول دراجة كورية محلية الصنع، وتغيّر اسمها إلى Kia عام 1952.</li>
+            <li>الاسم من حرفين صينيين: «كي» بمعنى النهوض و«آ» بمعنى آسيا، أي «النهوض من آسيا».</li></ul></div>
+          <div class="card"><span class="tag">KIA</span><h3>التحوّل</h3><ul>
+            <li>أطلقت Sportage عام 1993.</li>
+            <li>أُفلست مالياً عام 1997، واستحوذت هيونداي على حصة مسيطرة منها عام 1998.</li>
+            <li>كشفت في يناير 2021 عن شعار جديد وعبارة «Movement that Inspires».</li>
+            <li>EV6 هي أول سيارة كهربائية مخصصة لها على منصة E-GMP، وظهرت عام 2021.</li></ul></div>
+        </div>
+        <div class="panel" id="p-both">
+          <div class="card"><span class="tag">المجموعة</span><h3>شركتان وعلامتان</h3><ul>
+            <li>تأسست مجموعة هيونداي موتور عام 2000، وتبقى هيونداي وكيا شركتين منفصلتين في السوق.</li>
+            <li>تشتركان في البحث والتطوير (دمجتا هذا القسم عام 2003) وفي شبكات توزيع القطع.</li>
+            <li>تشترك Ioniq 5 وEV6 في منصة E-GMP الكهربائية.</li></ul></div>
+          <div class="card"><span class="tag">تنبيه للقطع</span><h3>لا تفترض التوافق</h3><ul>
+            <li>شاركت Tucson الأولى منصة Elantra مع Sportage الثانية، وتشاركت Rio الثانية منصتها مع Accent.</li>
+            <li>لكن تشارك المنصة لا يعني أن كل القطع تناسب الموديلين.</li>
+            <li>أرسل لنا رقم الشاصي أو صورة القطعة، ونتأكد قبل الشراء.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec s2">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">رحلة عبر الزمن</span><h2>محطات <em>مهمة</em></h2><p>من الدراجات إلى السيارات الكهربائية.</p></div><span class="section-index">02 / TIMELINE</span></div>
+        <div class="timeline">
+          <div class="tl"><b>1944</b><h4>تأسيس كيا</h4><p>بدأت باسم Kyungsung Precision Industry لتصنيع أنابيب الصلب وقطع الدراجات.</p></div>
+          <div class="tl"><b>1967</b><h4>تأسيس هيونداي موتور</h4><p>بداية قصة هيونداي في صناعة السيارات.</p></div>
+          <div class="tl"><b>1968</b><h4>Hyundai Cortina</h4><p>أول موديل جمّعته هيونداي، بالتعاون مع فورد.</p></div>
+          <div class="tl"><b>1975</b><h4>Hyundai Pony</h4><p>أول موديل مستقل من هيونداي ينتج بكميات كبيرة، وبدأ تصديره عام 1976.</p></div>
+          <div class="tl"><b>1985</b><h4>Hyundai Sonata</h4><p>ظهر جيلها الأول، ثم انتشرت فعلياً مع جيلها الثاني عام 1988.</p></div>
+          <div class="tl"><b>1990</b><h4>Hyundai Elantra</h4><p>ظهرت لأول مرة، وعُرفت في بعض الأسواق باسم Lantra حتى عام 2000.</p></div>
+          <div class="tl"><b>1993</b><h4>Kia Sportage</h4><p>سيارة الدفع الرباعي الصغيرة التي رسّخت اسم كيا عالمياً.</p></div>
+          <div class="tl"><b>1994</b><h4>Hyundai Accent</h4><p>خلفت Excel كسيارة صغيرة اقتصادية.</p></div>
+          <div class="tl"><b>1998</b><h4>هيونداي تستحوذ على كيا</h4><p>انضمت كيا إلى هيونداي بعد أزمتها المالية.</p></div>
+          <div class="tl"><b>2004</b><h4>Hyundai Tucson</h4><p>سيارة الدفع الرباعي الصغيرة من هيونداي، سُميت تيمناً بمدينة توكسون الأمريكية.</p></div>
+          <div class="tl"><b>2015</b><h4>إطلاق Genesis</h4><p>علامة هيونداي الفاخرة.</p></div>
+          <div class="tl"><b>2021</b><h4>Ioniq 5 وEV6 وهوية كيا الجديدة</h4><p>سيارتان كهربائيتان على منصة E-GMP، مع شعار جديد لكيا.</p></div>
+        </div>
+        <p class="note">التواريخ مراجعة من مصادر عامة، وقد تختلف تفاصيل الإطلاق من سوق لآخر.</p>
+      </div>
+    </section>
+
+    <section class="sec s3">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">موديلات تعرفها</span><h2>حقائق <em>سريعة</em></h2><p>عن الموديلات الشائعة في دليل القطع.</p></div><span class="section-index">03 / MODELS</span></div>
+        <div class="models">
+          <div class="card"><span class="tag">HYUNDAI · 1994</span><h3>Accent</h3><p>اسمه اختصار لعبارة Advanced Compact Car of Epoch-making New Technology.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+          <div class="card"><span class="tag">HYUNDAI · 1990</span><h3>Elantra</h3><p>تُباع في كوريا منذ جيلها الثاني باسم Avante.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+          <div class="card"><span class="tag">HYUNDAI · 2004</span><h3>Tucson</h3><p>سُمّيت تيمناً بمدينة توكسون في ولاية أريزونا، وشارك جيلها الأول منصة Elantra.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+          <div class="card"><span class="tag">KIA · 2000</span><h3>Rio</h3><p>حلّت محل Pride، وتشارك جيلها الثاني منصته مع Accent.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+          <div class="card"><span class="tag">KIA · 2003</span><h3>Cerato</h3><p>يتغير اسمه بين الأسواق: Forte في أمريكا الشمالية وK3 في كوريا.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+          <div class="card"><span class="tag">KIA · 1993</span><h3>Sportage</h3><p>بدأ على هيكل منفصل عن الجسم، ثم انتقل جيله الثاني إلى منصة سيارة عادية.</p><a class="go" href="index.html#catalog">تصفّح القطع ←</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec s2">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">للتسلية</span><h2>اختبر <em>معلوماتك</em></h2><p>ستة أسئلة سريعة.</p></div><span class="section-index">04 / QUIZ</span></div>
+        <div class="quiz" id="quiz"></div>
+      </div>
+    </section>
+
+    <section class="sec s1">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">نصائح</span><h2>لسيارتك <em>وقطعها</em></h2><p>معلومات عامة، ودليل مالك سيارتك هو المرجع.</p></div><span class="section-index">05 / TIPS</span></div>
+        <div class="tips">
+          <div class="card"><h3>راجع دليل المالك</h3><ul><li>فيه مواعيد تغيير الزيت والسيور والفلاتر المناسبة لسيارتك.</li></ul></div>
+          <div class="card"><h3>احتفظ برقم الشاصي</h3><ul><li>رقم الهيكل (VIN) أدق طريقة لتحديد القطعة المناسبة.</li></ul></div>
+          <div class="card"><h3>صوّر القطعة القديمة</h3><ul><li>صورة واضحة من أكثر من زاوية تسرّع الوصول إلى القطعة الصحيحة.</li></ul></div>
+          <div class="card"><h3>اسأل عن الحالة</h3><ul><li>تأكد إن كانت القطعة جديدة أو مستعملة قبل الدفع.</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>تبحث عن قطعة؟</h2>
+        <p>أرسل لنا موديل سيارتك والقطعة المطلوبة، ونتابع لك.</p>
+        <a class="btn btn-lime" href="index.html#request">اطلب قطعتك <span>←</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="footer-brand"><img src="assets/autokor-logo.jpg" alt="AutoKor"></a>
+      <p>دليل متخصص لقطع غيار كيا وهيونداي · حلب · 24 ساعة</p>
+      <span>© <span id="year"></span> AutoKor. جميع الحقوق محفوظة.</span>
+    </div>
+  </footer>
+  <a class="whatsapp-float" id="waFloat" href="index.html#request" aria-label="اطلب قطعة عبر واتساب">✆ <span>اطلب قطعتك</span></a>
+
+  <script src="config.js"></script>
+  <script>
+    var $ = function (id) { return document.getElementById(id); };
+    var CFG = window.AUTOKOR_CONFIG || {};
+    if (CFG.WHATSAPP) {
+      $("waFloat").href = "https://wa.me/" + CFG.WHATSAPP + "?text=" + encodeURIComponent("مرحباً، أريد الاستفسار عن قطعة غيار.");
+      $("waFloat").target = "_blank"; $("waFloat").rel = "noopener";
+    }
+    $("year").textContent = new Date().getFullYear();
+    $("menuToggle").addEventListener("click", function () {
+      var nav = $("mainNav"); nav.classList.toggle("open");
+      this.setAttribute("aria-expanded", nav.classList.contains("open"));
+    });
+    document.querySelectorAll("#brandTabs .tab").forEach(function (b) {
+      b.addEventListener("click", function () {
+        document.querySelectorAll("#brandTabs .tab").forEach(function (x) { x.classList.remove("active"); });
+        document.querySelectorAll(".panel").forEach(function (x) { x.classList.remove("show"); });
+        b.classList.add("active"); $("p-" + b.dataset.p).classList.add("show");
+      });
+    });
+
+    var Q = [
+      {q: "ماذا تعني كلمة «هيونداي» بالكورية؟", o: ["القوة", "الحداثة", "الشرق", "السرعة"], a: 1},
+      {q: "أي موديل سُمّي تيمناً بمدينة أمريكية؟", o: ["Accent", "Rio", "Tucson", "Cerato"], a: 2},
+      {q: "في أي عام استحوذت هيونداي على حصة مسيطرة في كيا؟", o: ["1988", "1998", "2008", "2018"], a: 1},
+      {q: "بماذا بدأ نشاط كيا عام 1944؟", o: ["أنابيب الصلب وقطع الدراجات", "الملابس", "الأجهزة المنزلية", "بناء السفن"], a: 0},
+      {q: "ما اسم أول موديل مستقل أنتجته هيونداي بكميات كبيرة عام 1975؟", o: ["Sonata", "Pony", "Elantra", "Accent"], a: 1},
+      {q: "بأي اسم تُباع Elantra في كوريا الجنوبية منذ جيلها الثاني؟", o: ["Avante", "Verna", "Lantra", "Excel"], a: 0}
+    ];
+    var i = 0, score = 0, box = $("quiz");
+    function show() {
+      if (i >= Q.length) {
+        box.innerHTML = '<h3>نتيجتك: ' + score + ' من ' + Q.length + '</h3><p class="fb">' +
+          (score >= 5 ? "ممتاز! أنت خبير بالسيارات الكورية." : "جيد! جرّب مرة أخرى.") +
+          '</p><button class="btn btn-lime next" id="again">أعد الاختبار</button>';
+        $("again").onclick = function () { i = 0; score = 0; show(); };
+        return;
+      }
+      var item = Q[i];
+      box.innerHTML = '<span class="qn">السؤال ' + (i + 1) + ' من ' + Q.length + '</span><h3>' + item.q +
+        '</h3><div class="opts">' + item.o.map(function (t, k) { return '<button data-k="' + k + '">' + t + '</button>'; }).join("") +
+        '</div><div class="fb" id="fb"></div>';
+      box.querySelectorAll(".opts button").forEach(function (b) {
+        b.onclick = function () {
+          var k = Number(b.dataset.k), btns = box.querySelectorAll(".opts button");
+          btns.forEach(function (x) { x.disabled = true; });
+          btns[item.a].classList.add("ok");
+          if (k === item.a) { score++; $("fb").textContent = "إجابة صحيحة!"; }
+          else { b.classList.add("no"); $("fb").textContent = "ليست صحيحة. الجواب: " + item.o[item.a]; }
+          var n = document.createElement("button");
+          n.className = "btn btn-lime next"; n.textContent = i === Q.length - 1 ? "النتيجة" : "التالي";
+          n.onclick = function () { i++; show(); };
+          box.appendChild(n);
+        };
+      });
+    }
+    show();
+  </script>
+</body>
+</html>

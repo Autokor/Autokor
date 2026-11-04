@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081321">
+  <meta name="description" content="AutoKor — دليل متخصص لقطع غيار سيارات كيا وهيونداي. ابحث عن القطعة أو اطلبها مباشرة.">
+  <title>AutoKor | أوتو كور — قطع غيار كيا وهيونداي في حلب</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website"><meta property="og:locale" content="ar_AR">
+  <meta property="og:title" content="AutoKor — قطع غيار كيا وهيونداي في حلب">
+  <meta property="og:description" content="ابحث عن قطعتك أو اطلبها مباشرة عبر واتساب. خدمة على مدار 24 ساعة.">
+  <meta property="og:url" content="https://autokor.github.io/Autokor/">
+  <meta property="og:image" content="https://autokor.github.io/Autokor/assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoPartsStore","name":"AutoKor","telephone":"+963932118719","areaServed":"Aleppo","address":{"@type":"PostalAddress","addressLocality":"Aleppo","addressCountry":"SY"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="AutoKor الصفحة الرئيسية">
+        <img src="assets/autokor-logo.jpg" alt="شعار AutoKor">
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="#home">الرئيسية</a>
+        <a href="#brands">السيارات</a>
+        <a href="#catalog">قطع الغيار</a>
+        <a href="korean-cars.html">عالم السيارات</a>
+        <a href="#request">اطلب قطعة</a>
+        <a href="#faq">الأسئلة</a>
+      </nav>
+      <a class="header-cta" href="#request"><span>＋</span> اطلب قطعتك</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> دليلك لقطع كيا وهيونداي في حلب</div>
+          <h1>قطعة سيارتك<br><span>تبدأ من هنا.</span></h1>
+          <p>ابحث في دليل قطع الغيار، أو أرسل طلبك وسنساعدك في الوصول إلى القطعة المناسبة.</p>
+          <div class="hero-actions">
+            <a class="btn btn-lime" href="#catalog">تصفّح القطع <span>←</span></a>
+            <a class="btn btn-outline" href="#request">لم تجد قطعتك؟</a>
+          </div>
+          <div class="hero-trust">
+            <div><b>01</b><span>اختر سيارتك</span></div>
+            <i></i>
+            <div><b>02</b><span>حدّد القطعة</span></div>
+            <i></i>
+            <div><b>03</b><span>استفسر مباشرة</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-glow"></div>
+          <img src="assets/autokor-logo.jpg" alt="شعار AutoKor المدمج مع السيارة" class="hero-logo">
+          <div class="floating-chip"><span class="chip-dot"></span> كيا <b>×</b> هيونداي</div>
+          <div class="art-caption">ALEPPO <span>•</span> 24/7</div>
+        </div>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="quick-search">
+      <div class="container">
+        <form class="search-panel" id="searchForm">
+          <div class="search-heading">
+            <span class="search-icon">⌕</span>
+            <div><strong>ابدأ البحث عن قطعتك</strong><small>اختر بيانات سيارتك للوصول إلى النتائج</small></div>
+          </div>
+          <label><span>الشركة</span>
+            <select id="brandFilter">
+              <option value="">كل الشركات</option><option value="Hyundai">هيونداي</option><option value="Kia">كيا</option>
+            </select>
+          </label>
+          <label><span>الموديل</span>
+            <select id="modelFilter"><option value="">كل الموديلات</option></select>
+          </label>
+          <label><span>نوع القطعة</span>
+            <select id="categoryFilter">
+              <option value="">كل القطع</option><option value="محرك">المحرك</option><option value="فرامل">الفرامل</option><option value="كهرباء">الكهرباء</option><option value="هيكل">الهيكل</option><option value="تعليق">التعليق</option>
+            </select>
+          </label>
+          <button class="search-submit" type="submit">ابحث الآن <span>←</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section brands-section" id="brands">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">اختر وجهتك</span><h2>ابدأ من <em>سيارتك</em></h2><p>تصفح حسب الشركة، ثم اختر الموديل المناسب.</p></div>
+          <span class="section-index">01 / BRANDS</span>
+        </div>
+        <div class="brand-cards">
+          <button class="brand-card hyundai" data-brand="Hyundai">
+            <span class="brand-number">01</span><span class="brand-mark">H</span>
+            <span class="brand-name">HYUNDAI</span><span class="brand-ar">هيونداي</span>
+            <span class="brand-arrow">↙</span>
+          </button>
+          <button class="brand-card kia" data-brand="Kia">
+            <span class="brand-number">02</span><span class="brand-mark kia-mark">K</span>
+            <span class="brand-name">KIA</span><span class="brand-ar">كيا</span>
+            <span class="brand-arrow">↙</span>
+          </button>
+        </div>
+        <div class="models-row">
+          <span>موديلات شائعة:</span>
+          <button data-model="Accent">Accent</button><button data-model="Elantra">Elantra</button><button data-model="Tucson">Tucson</button><button data-model="Cerato">Cerato</button><button data-model="Rio">Rio</button><button data-model="Sportage">Sportage</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-head">
+          <div><span class="section-kicker">دليل القطع</span><h2>تصفّح <em>قطع الغيار</em></h2><p>ابحث حسب الشركة والموديل ونوع القطعة، ثم استفسر مباشرة عبر واتساب.</p></div>
+          <span class="section-index">02 / CATALOG</span>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="catalog-tabs"><button class="tab active" data-condition="">الكل</button><button class="tab" data-condition="جديد">جديد</button><button class="tab" data-condition="مستعمل">مستعمل</button></div>
+          <div class="results-count" id="resultsCount">نماذج توضيحية</div>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <div class="catalog-note"><span>ⓘ</span> الأسعار والتوفر والتوافق مع السيارة لا تُعتمد إلا بعد التأكد من المورد.</div>
+      </div>
+    </section>
+
+    <section class="request-section" id="request">
+      <div class="container request-wrap">
+        <div class="request-copy">
+          <span class="section-kicker">خدمة البحث عن القطع</span>
+          <h2>ما لقيت <em>قطعتك؟</em></h2>
+          <p>مو شرط تكون القطعة موجودة في الدليل. أرسل لنا تفاصيل سيارتك والقطعة المطلوبة، وسنتابع الاستفسار عنها.</p>
+          <div class="request-points"><span>✓ لا تحتاج إلى إنشاء حساب</span><span>✓ تواصل مباشر عبر واتساب</span><span>✓ السعر والتوفر بعد التأكيد</span><span>✓ خدمة على مدار 24 ساعة في حلب</span></div>
+        </div>
+        <form class="request-form" id="requestForm">
+          <div class="form-title"><b>أرسل طلبك</b><span>وسنساعدك في البحث</span></div>
+          <div class="form-row">
+            <label>الشركة<select id="requestBrand" required><option value="">اختر الشركة</option><option>هيونداي</option><option>كيا</option></select></label>
+            <label>الموديل<input id="requestModel" placeholder="مثال: إلنترا" required></label>
+          </div>
+          <div class="form-row">
+            <label>سنة الصنع <input id="requestYear" placeholder="مثال: 2015"></label>
+            <label>نوع القطعة <input id="requestPart" placeholder="مثال: مصباح أمامي" required></label>
+          </div>
+          <label>تفاصيل إضافية <textarea id="requestDetails" rows="3" placeholder="اكتب أي تفاصيل تساعدنا في تحديد القطعة..."></textarea></label>
+          <button class="btn btn-lime form-submit" type="submit">إرسال الطلب عبر واتساب <span>←</span></button>
+          <small class="form-hint">سيتم فتح واتساب برسالة جاهزة لتأكيد طلبك.</small>
+          <a class="call-link" data-tel href="#">أو اتصل مباشرة: 0932 118 719</a>
+        </form>
+      </div>
+    </section>
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-head"><div><span class="section-kicker">أسئلة شائعة</span><h2>قبل أن <em>تسأل</em></h2></div><span class="section-index">03 / FAQ</span></div>
+        <div class="faq-list">
+          <details><summary>كيف أعرف أن القطعة تناسب سيارتي؟</summary><p>أرسل الموديل وسنة الصنع، ويفضّل رقم الشاصي أو صورة للقطعة القديمة، وسنؤكد لك التوافق قبل أي شيء.</p></details>
+          <details><summary>هل الأسعار ثابتة؟</summary><p>يتم تأكيد السعر والتوفر عند الاستفسار، لأنها تختلف حسب القطعة وحالتها.</p></details>
+          <details><summary>هل القطع جديدة أم مستعملة؟</summary><p>يظهر النوعان حسب القطعة، وتُذكر الحالة بوضوح في بطاقة كل قطعة.</p></details>
+          <details><summary>أين تخدمون ومتى يمكنني التواصل؟</summary><p>الخدمة حالياً في حلب، ويمكنك التواصل على مدار 24 ساعة. لمناطق أخرى راسلنا على واتساب.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="footer-brand"><img src="assets/autokor-logo.jpg" alt="AutoKor"></a>
+      <p>دليل متخصص لقطع غيار كيا وهيونداي · حلب · 24 ساعة · <a data-tel href="#">0932 118 719</a></p>
+      <span>© <span id="year"></span> AutoKor. جميع الحقوق محفوظة.</span>
+    </div>
+  </footer>
+  <a class="whatsapp-float" id="generalWhatsapp" href="#request" aria-label="اطلب قطعة عبر واتساب">✆ <span>اطلب قطعتك</span></a>
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
